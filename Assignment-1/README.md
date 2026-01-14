@@ -17,7 +17,7 @@ is an <b>`open-source tool`</b>, which `lets developers` <ins>`run JavaScript on
 ### Version Control, Git, & GitHub
 - Version Control is a software/tool that tracks and manages changes to files. It keeps a history of edits/changes, allows for collaboration (see who did what), and helps compare, restore or undo changes to a file.
 - Git is a version control system that is used by many developers (Over 70%, according to w3schools).
-- Github is
+- GitHub is a platform that uses Git, and it allows developers to share and store code, which makes it great for managing projects.
 
 <h6> Source: https://github.com/resources/articles/what-is-version-control </h6>
 <h6> Source: https://www.w3schools.com/git/git_intro.asp? </h6>
