@@ -9,7 +9,8 @@
 ---
  
 ### Node.js...
-Brief description of understanding. Use any combination of markdown techniques. Should be more than 2 sentences.
+is an <b>`open-source tool`</b>, which lets developers `run JavaScript on a server` instead of in a web browser. It's designed to be fast and asynchronous, which means it can handle many tasks at once without waiting for each one to finish. It's also used to build API's, Web servers, manage database interactions, and so much more.
+<h6> Source: https://www.w3schools.com/nodejs/nodejs_intro.asp </h6>
 
 ---
 
@@ -21,3 +22,4 @@ Brief description of understanding. Use any combination of markdown techniques. 
 
 ### Markdown & Documentation
 Brief description of understanding. Use any combination of markdown techniques. Should be more than 2 sentences.
+<h6> Source: https://www.markdownguide.org/cheat-sheet/ </h6>
