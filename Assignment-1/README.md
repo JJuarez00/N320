@@ -15,9 +15,13 @@ is an <b>`open-source tool`</b>, which lets developers `run JavaScript on a serv
 ---
 
 ### Version Control, Git, & GitHub
-- Version Control is
+- Version Control is a software/tool that tracks and manages changes to files. It keeps a history of edits, allows for collaboration, and helps compare, restore or undo changes to a file.
 - Git is
 - Github is
+
+<h6> Source: https://github.com/resources/articles/what-is-version-control </h6>
+<h6> Source: https://www.w3schools.com/git/git_intro.asp? </h6>
+
 ---
 
 ### Markdown & Documentation
