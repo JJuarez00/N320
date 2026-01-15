@@ -26,7 +26,7 @@ is an <b>`open-source tool`</b>, which `lets developers` <ins>`run JavaScript on
 
 ### Markdown & Documentation
 - <b>`Markdown`</b> is a lightweight markup language, which is used to style text. In this README, it uses a `.md` file (which stands for Markdown) to make what you’re reading more engaging and easier to understand.
-- <b>`Documentation`</b>
+- <b>`Documentation`</b> is
 
 <h6> Source: https://www.markdownguide.org/getting-started/ </h6>
 <h6> Source: Add Later </h6>
