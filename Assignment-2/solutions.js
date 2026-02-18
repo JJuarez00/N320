@@ -1,5 +1,3 @@
-// 30 Songs across 6 Genres with varied artists
-
 const listeningData = [
     // Pop Genre (5 songs)
     { 
