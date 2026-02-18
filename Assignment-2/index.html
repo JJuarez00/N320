@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Platform Analytics - Level 3</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-size: 1.8em;
+        }
+
+        .task-description {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 5px solid #667eea;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .task-description p {
+            margin: 5px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .task-description strong {
+            color: #764ba2;
+        }
+
+        /* Styling for answer boxes */
+        .answer-box {
+            background-color: #1e1e1e;
+            color: #00ff00;
+            border: 2px solid #667eea;
+            padding: 20px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            font-family: "Courier New", Courier, monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            min-height: 80px;
+            font-size: 14px;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Courier New", Courier, monospace;
+            color: #d63384;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎵 Music Streaming Platform Analytics 🎵</h1>
+        <p class="subtitle">Advanced Array Operations & Data Analysis Challenge</p>
+
+        <div class="info-box">
+            <h3>📊 Scenario</h3>
+            <p>You are a data analyst at <strong>StreamBeats</strong>, a popular music streaming platform. The platform has collected user listening data across different artists, and your job is to analyze trends, identify top performers, and provide insights for playlist curation and artist promotions.</p>
+            <p><strong>Your mission:</strong> Use advanced JavaScript array methods (map, filter, reduce) to transform, analyze, and extract meaningful insights from the listening data.</p>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Important Instructions</h3>
+            <p><strong>1.</strong> Create a separate JavaScript file named <code>solutions.js</code></p>
+            <p><strong>2.</strong> Link it at the bottom of this HTML file: <code>&lt;script src="solutions.js"&gt;&lt;/script&gt;</code></p>
+            <p><strong>3.</strong> Use the provided <code>listeningData</code> array (included in this file)</p>
+            <p><strong>4.</strong> Display your results in the answer boxes by updating the innerHTML</p>
+            <p><strong>5.</strong> You must use <code>map()</code>, <code>filter()</code>, and/or <code>reduce()</code> - NO regular loops!</p>
+        </div>
+
+        <!-- Task 1 -->
+        <h2>Task 1: Multi-Tier Artist Categorization</h2>
+        <div class="task-description">
+            <p><strong>Objective:</strong> Categorize artists into performance tiers based on their total streams.</p>
+            <p><strong>Requirements:</strong></p>
+            <p>• First, calculate the <strong>total streams</strong> for each artist (sum of all their songs)</p>
+            <p>• Then categorize each artist into tiers:</p>
+            <p>&nbsp;&nbsp;&nbsp;- <strong>Platinum</strong>: Total streams ≥ 10,000,000</p>
+            <p>&nbsp;&nbsp;&nbsp;- <strong>Gold</strong>: Total streams ≥ 5,000,000 and &lt; 10,000,000</p>
+            <p>&nbsp;&nbsp;&nbsp;- <strong>Silver</strong>: Total streams &lt; 5,000,000</p>
+            <p><strong>Output Format:</strong> An array of objects with <code>{ artist, totalStreams, tier }</code></p>
+            <p><strong>Hint:</strong> Use reduce() to sum streams, then map() to add tier information</p>
+        </div>
+        <p id="task1Answer" class="answer-box">// Your answer will appear here</p>
+
+        <!-- Task 2 -->
+        <h2>Task 2: Genre Performance Metrics with Engagement Score</h2>
+        <div class="task-description">
+            <p><strong>Objective:</strong> Calculate comprehensive performance metrics for each genre with a custom engagement score.</p>
+            <p><strong>Requirements:</strong></p>
+            <p>• Group songs by genre</p>
+            <p>• For each genre, calculate:</p>
+            <p>&nbsp;&nbsp;&nbsp;- Average streams</p>
+            <p>&nbsp;&nbsp;&nbsp;- Average rating</p>
+            <p>&nbsp;&nbsp;&nbsp;- Song count</p>
+            <p>&nbsp;&nbsp;&nbsp;- <strong>Engagement Score</strong> = (avgStreams / 1,000,000) × avgRating</p>
+            <p><strong>Output Format:</strong> An object where keys are genres and values contain the metrics</p>
+            <p><strong>Hint:</strong> Use reduce() to group and calculate, round engagement score to 2 decimals</p>
+        </div>
+        <p id="task2Answer" class="answer-box">// Your answer will appear here</p>
+
+        <!-- Task 3 -->
+        <h2>Task 3: Peak Performance Window Analysis</h2>
+        <div class="task-description">
+            <p><strong>Objective:</strong> Identify consecutive 4-song windows with the highest combined engagement.</p>
+            <p><strong>Requirements:</strong></p>
+            <p>• Calculate a sliding window of 4 consecutive songs</p>
+            <p>• For each window, sum: (streams / 1000) + (rating × 500)</p>
+            <p>• Find the window with the maximum total score</p>
+            <p>• Return an object with: <code>{ startIndex, endIndex, songs, totalScore }</code></p>
+            <p>&nbsp;&nbsp;&nbsp;- <code>songs</code> should be an array of the 4 song titles in that window</p>
+            <p><strong>Hint:</strong> Loop through array indices, calculate score for each 4-song window</p>
+        </div>
+        <p id="task3Answer" class="answer-box">// Your answer will appear here</p>
+
+        <!-- Task 4 -->
+        <h2>Task 4: Cross-Genre Artist Diversity Analysis</h2>
+        <div class="task-description">
+            <p><strong>Objective:</strong> Identify which artists have the most genre diversity and their performance across genres.</p>
+            <p><strong>Requirements:</strong></p>
+            <p>• Find artists who have songs in <strong>3 or more different genres</strong></p>
+            <p>• For each qualifying artist, calculate:</p>
+            <p>&nbsp;&nbsp;&nbsp;- List of unique genres they produce</p>
+            <p>&nbsp;&nbsp;&nbsp;- Average streams per genre</p>
+            <p>&nbsp;&nbsp;&nbsp;- Their best-performing genre (highest average streams)</p>
+            <p><strong>Output Format:</strong> Array of objects with <code>{ artist, genres, genreCount, bestGenre, bestGenreAvgStreams }</code></p>
+            <p><strong>Hint:</strong> Use reduce() to group by artist and genre, then filter and transform</p>
+        </div>
+        <p id="task4Answer" class="answer-box">// Your answer will appear here</p>
+
+        <!-- Task 5 -->
+        <h2>Task 5: Premium Playlist Curation Algorithm</h2>
+        <div class="task-description">
+            <p><strong>Objective:</strong> Create an optimized playlist based on multiple quality criteria.</p>
+            <p><strong>Requirements:</strong></p>
+            <p>• Filter songs that meet ALL these criteria:</p>
+            <p>&nbsp;&nbsp;&nbsp;- Rating ≥ 4.3</p>
+            <p>&nbsp;&nbsp;&nbsp;- Streams ≥ 2,000,000</p>
+            <p>&nbsp;&nbsp;&nbsp;- Duration between 180-240 seconds (3-4 minutes)</p>
+            <p>• Sort the filtered songs by a <strong>Quality Score</strong> (descending):</p>
+            <p>&nbsp;&nbsp;&nbsp;- Quality Score = (rating × 2) + (streams / 500000)</p>
+            <p>• Return the <strong>top 10</strong> songs</p>
+            <p><strong>Output Format:</strong> Array of objects with <code>{ title, artist, qualityScore }</code></p>
+            <p><strong>Hint:</strong> Chain filter(), map() to add qualityScore, sort(), and slice()</p>
+        </div>
+        <p id="task5Answer" class="answer-box">// Your answer will appear here</p>
+
+        <div class="footer">
+            <p><strong>StreamBeats Analytics Dashboard</strong> | Advanced JavaScript Array Operations</p>
+            <p>Remember: Think functionally, chain methods, and avoid traditional loops!</p>
+        </div>
+    </div>
+
+    <!-- Data Source -->
+    <script>
+        const listeningData = [
+            // Pop
+            { title: "Sunset Dreams", artist: "Luna Ray", genre: "pop", streams: 4200000, rating: 4.7, duration: 210 },
+            { title: "Neon Lights", artist: "Luna Ray", genre: "pop", streams: 3800000, rating: 4.5, duration: 195 },
+            { title: "City Hearts", artist: "Max Sterling", genre: "pop", streams: 5100000, rating: 4.6, duration: 225 },
+            { title: "Dancing Shadows", artist: "Aria Chen", genre: "pop", streams: 2900000, rating: 4.4, duration: 200 },
+            { title: "Summer Vibes", artist: "Aria Chen", genre: "pop", streams: 6200000, rating: 4.8, duration: 215 },
+
+            // Rock
+            { title: "Thunder Roads", artist: "The Rebels", genre: "rock", streams: 3400000, rating: 4.3, duration: 245 },
+            { title: "Breaking Free", artist: "The Rebels", genre: "rock", streams: 4100000, rating: 4.5, duration: 230 },
+            { title: "Electric Storm", artist: "Luna Ray", genre: "rock", streams: 2700000, rating: 4.2, duration: 255 },
+            { title: "Midnight Run", artist: "Jake Rivers", genre: "rock", streams: 3900000, rating: 4.6, duration: 220 },
+            { title: "Rebel Heart", artist: "Jake Rivers", genre: "rock", streams: 5200000, rating: 4.7, duration: 235 },
+
+            // Hip-Hop
+            { title: "Flow State", artist: "MC Dynamo", genre: "hip-hop", streams: 7800000, rating: 4.8, duration: 190 },
+            { title: "Street Poet", artist: "MC Dynamo", genre: "hip-hop", streams: 6500000, rating: 4.6, duration: 205 },
+            { title: "Golden Era", artist: "Lyric Master", genre: "hip-hop", streams: 4200000, rating: 4.4, duration: 210 },
+            { title: "Rhythm & Truth", artist: "Lyric Master", genre: "hip-hop", streams: 5600000, rating: 4.7, duration: 198 },
+            { title: "Urban Legends", artist: "Max Sterling", genre: "hip-hop", streams: 3800000, rating: 4.3, duration: 215 },
+
+            // Electronic
+            { title: "Digital Dreams", artist: "Synth Wave", genre: "electronic", streams: 5900000, rating: 4.5, duration: 188 },
+            { title: "Neon Pulse", artist: "Synth Wave", genre: "electronic", streams: 6700000, rating: 4.7, duration: 192 },
+            { title: "Cyber City", artist: "Aria Chen", genre: "electronic", streams: 4500000, rating: 4.4, duration: 205 },
+            { title: "Future Beats", artist: "DJ Nova", genre: "electronic", streams: 8100000, rating: 4.9, duration: 195 },
+            { title: "Voltage", artist: "DJ Nova", genre: "electronic", streams: 7200000, rating: 4.6, duration: 200 },
+
+            // R&B
+            { title: "Smooth Operator", artist: "Velvet Voice", genre: "r&b", streams: 3200000, rating: 4.5, duration: 220 },
+            { title: "Midnight Groove", artist: "Velvet Voice", genre: "r&b", streams: 4600000, rating: 4.7, duration: 235 },
+            { title: "Soul Fire", artist: "Luna Ray", genre: "r&b", streams: 2800000, rating: 4.3, duration: 210 },
+            { title: "Love Language", artist: "Aria Chen", genre: "r&b", streams: 5400000, rating: 4.8, duration: 225 },
+            { title: "Feel The Vibe", artist: "Max Sterling", genre: "r&b", streams: 3900000, rating: 4.4, duration: 215 },
+
+            // Indie
+            { title: "Whispering Pines", artist: "Forest Echo", genre: "indie", streams: 1900000, rating: 4.6, duration: 240 },
+            { title: "Coffee Shop Tales", artist: "Forest Echo", genre: "indie", streams: 2100000, rating: 4.4, duration: 225 },
+            { title: "Vintage Memories", artist: "The Wanderers", genre: "indie", streams: 1600000, rating: 4.2, duration: 235 },
+            { title: "Paper Planes", artist: "The Wanderers", genre: "indie", streams: 2400000, rating: 4.5, duration: 220 },
+            { title: "Golden Hour", artist: "Luna Ray", genre: "indie", streams: 3100000, rating: 4.7, duration: 215 }
+        ];
+    </script>
+
+    <!-- Link to student's solution file -->
+     <script src="solutions.js"></script>
+</body>
+</html>
