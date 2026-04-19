@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaveForm — Assignment 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- GSAP from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     LANDING PAGE SECTIONS
+     All sections are pre-built. Your animations.js
+     file will bring them to life.
+═══════════════════════════════════════════ -->
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+    <div class="nav-inner">
+        <div class="nav-logo">
+            <span class="nav-logo-icon">🎵</span>
+            <span class="nav-logo-text">WaveForm</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#playlist">Playlist</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <a href="#" class="nav-cta">Get Early Access</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow" id="heroEyebrow">🚀 Seed Funded — We're Building</div>
+        <h1 class="hero-title" id="heroTitle">
+            <span class="hero-line" id="heroLine1">Music streaming,</span>
+            <span class="hero-line hero-line-accent" id="heroLine2">finally done right.</span>
+        </h1>
+        <p class="hero-sub" id="heroSub">
+            We got laid off. They stole our idea. So we built it better.<br>
+            WaveForm is the music platform that actually listens to you.
+        </p>
+        <div class="hero-actions" id="heroActions">
+            <a href="#" class="btn-primary">Start Free Trial</a>
+            <a href="#" class="btn-ghost">Watch Demo ▶</a>
+        </div>
+        <div class="hero-badges" id="heroBadges">
+            <span class="badge">✓ No ads ever</span>
+            <span class="badge">✓ Offline mode</span>
+            <span class="badge">✓ Lossless audio</span>
+            <span class="badge">✓ AI-powered discovery</span>
+        </div>
+    </div>
+
+    <!-- Decorative floating cards -->
+    <div class="hero-float-cards" id="heroFloatCards">
+        <div class="float-card fc1" id="floatCard1">
+            <span class="fc-icon">🎵</span>
+            <div class="fc-text">
+                <span class="fc-title">Midnight Signal</span>
+                <span class="fc-sub">Nova Pulse · Electronic</span>
+            </div>
+            <span class="fc-play">▶</span>
+        </div>
+        <div class="float-card fc2" id="floatCard2">
+            <span class="fc-icon">🎸</span>
+            <div class="fc-text">
+                <span class="fc-title">Golden Hour</span>
+                <span class="fc-sub">Elm & Cedar · Indie</span>
+            </div>
+            <span class="fc-play">▶</span>
+        </div>
+        <div class="float-card fc3" id="floatCard3">
+            <span class="fc-icon">🎤</span>
+            <div class="fc-text">
+                <span class="fc-title">Velvet Room</span>
+                <span class="fc-sub">Sable Shore · R&B</span>
+            </div>
+            <span class="fc-play">▶</span>
+        </div>
+    </div>
+</section>
+
+<!-- STATS TICKER -->
+<div class="stats-ticker" id="statsTicker">
+    <div class="ticker-inner">
+        <div class="ticker-stat" id="statUsers">
+            <span class="ticker-num" id="numUsers">0</span>
+            <span class="ticker-label">Beta Users</span>
+        </div>
+        <div class="ticker-divider"></div>
+        <div class="ticker-stat" id="statTracks">
+            <span class="ticker-num" id="numTracks">0</span>
+            <span class="ticker-label">Tracks Available</span>
+        </div>
+        <div class="ticker-divider"></div>
+        <div class="ticker-stat" id="statArtists">
+            <span class="ticker-num" id="numArtists">0</span>
+            <span class="ticker-label">Artists</span>
+        </div>
+        <div class="ticker-divider"></div>
+        <div class="ticker-stat" id="statFunding">
+            <span class="ticker-num" id="numFunding">$0</span>
+            <span class="ticker-label">Seed Funding</span>
+        </div>
+    </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <div class="section-inner">
+        <h2 class="section-title" id="featuresTitle">Built different.</h2>
+        <p class="section-sub" id="featuresSub">Every feature we wanted at BeatFlow — and everything they refused to build.</p>
+        <div class="features-grid" id="featuresGrid">
+            <div class="feature-card" id="feat0">
+                <div class="feat-icon">🎯</div>
+                <h3>Smart Discovery</h3>
+                <p>AI that learns your taste, not your ad profile. No sponsored tracks, ever.</p>
+            </div>
+            <div class="feature-card" id="feat1">
+                <div class="feat-icon">🔊</div>
+                <h3>Lossless Audio</h3>
+                <p>Studio-quality streaming at every tier. Because you deserve to hear every detail.</p>
+            </div>
+            <div class="feature-card" id="feat2">
+                <div class="feat-icon">📱</div>
+                <h3>Offline Everywhere</h3>
+                <p>Download any track, playlist, or album. No internet? No problem.</p>
+            </div>
+            <div class="feature-card" id="feat3">
+                <div class="feat-icon">🎵</div>
+                <h3>Playlist Intelligence</h3>
+                <p>The feature they stole. Now built better, faster, and fully transparent.</p>
+            </div>
+            <div class="feature-card" id="feat4">
+                <div class="feat-icon">🤝</div>
+                <h3>Artist-First Revenue</h3>
+                <p>70% of every subscription goes directly to the artists you listen to.</p>
+            </div>
+            <div class="feature-card" id="feat5">
+                <div class="feat-icon">🔒</div>
+                <h3>Zero Data Selling</h3>
+                <p>We don't sell your data. We don't rent it. We don't even look at it ourselves.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLAYLIST SHOWCASE (A4 connection) -->
+<section class="playlist-section" id="playlist">
+    <div class="section-inner">
+        <h2 class="section-title light" id="playlistTitle">Our launch playlist.</h2>
+        <p class="section-sub light" id="playlistSub">
+            These are the tracks that got us through the build. They'll be available on day one.
+        </p>
+        <div class="playlist-grid" id="playlistGrid">
+            <div class="pl-track" id="plt0">
+                <span class="pl-num">01</span>
+                <span class="pl-icon">🎵</span>
+                <div class="pl-info"><span class="pl-title">Midnight Signal</span><span class="pl-artist">Nova Pulse</span></div>
+                <span class="pl-genre">Electronic</span>
+                <span class="pl-dur">3:34</span>
+            </div>
+            <div class="pl-track" id="plt1">
+                <span class="pl-num">02</span>
+                <span class="pl-icon">🎸</span>
+                <div class="pl-info"><span class="pl-title">Golden Hour</span><span class="pl-artist">Elm & Cedar</span></div>
+                <span class="pl-genre">Indie</span>
+                <span class="pl-dur">3:42</span>
+            </div>
+            <div class="pl-track" id="plt2">
+                <span class="pl-num">03</span>
+                <span class="pl-icon">🎤</span>
+                <div class="pl-info"><span class="pl-title">Velvet Room</span><span class="pl-artist">Sable Shore</span></div>
+                <span class="pl-genre">R&amp;B</span>
+                <span class="pl-dur">3:21</span>
+            </div>
+            <div class="pl-track" id="plt3">
+                <span class="pl-num">04</span>
+                <span class="pl-icon">🎧</span>
+                <div class="pl-info"><span class="pl-title">Ghost Frequencies</span><span class="pl-artist">Nova Pulse</span></div>
+                <span class="pl-genre">Electronic</span>
+                <span class="pl-dur">4:13</span>
+            </div>
+            <div class="pl-track" id="plt4">
+                <span class="pl-num">05</span>
+                <span class="pl-icon">🎼</span>
+                <div class="pl-info"><span class="pl-title">Trailhead</span><span class="pl-artist">Elm & Cedar</span></div>
+                <span class="pl-genre">Indie</span>
+                <span class="pl-dur">3:28</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+    <div class="section-inner">
+        <h2 class="section-title" id="pricingTitle">Simple pricing.</h2>
+        <p class="section-sub" id="pricingSub">No hidden fees. No surprise charges. Cancel any time.</p>
+        <div class="pricing-grid" id="pricingGrid">
+            <div class="price-card" id="priceCard0">
+                <div class="price-tier">Free</div>
+                <div class="price-amount">$0<span>/mo</span></div>
+                <ul class="price-features">
+                    <li>✓ 40 hours/month streaming</li>
+                    <li>✓ Standard audio quality</li>
+                    <li>✓ Mobile &amp; desktop</li>
+                    <li>✗ No offline</li>
+                    <li>✗ No lossless</li>
+                </ul>
+                <a href="#" class="price-btn">Get Started</a>
+            </div>
+            <div class="price-card price-card-featured" id="priceCard1">
+                <div class="price-popular">Most Popular</div>
+                <div class="price-tier">Pro</div>
+                <div class="price-amount">$9<span>/mo</span></div>
+                <ul class="price-features">
+                    <li>✓ Unlimited streaming</li>
+                    <li>✓ Lossless audio</li>
+                    <li>✓ Offline downloads</li>
+                    <li>✓ Smart discovery</li>
+                    <li>✓ No ads, ever</li>
+                </ul>
+                <a href="#" class="price-btn price-btn-primary">Start Free Trial</a>
+            </div>
+            <div class="price-card" id="priceCard2">
+                <div class="price-tier">Artist</div>
+                <div class="price-amount">$15<span>/mo</span></div>
+                <ul class="price-features">
+                    <li>✓ Everything in Pro</li>
+                    <li>✓ Upload your own tracks</li>
+                    <li>✓ Revenue dashboard</li>
+                    <li>✓ Direct fan messaging</li>
+                    <li>✓ Priority support</li>
+                </ul>
+                <a href="#" class="price-btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="siteFooter">
+    <div class="footer-inner">
+        <div class="footer-logo">
+            <span>🎵</span>
+            <span>WaveForm</span>
+        </div>
+        <p class="footer-tagline">Built by people who actually love music.</p>
+        <p class="footer-sub">© 2025 WaveForm Inc. — Assignment 5 submission</p>
+    </div>
+</footer>
+
+<script src="animations.js" defer></script>
+</body>
+</html>
